@@ -11,7 +11,7 @@ This project is for **educational** purposes only. Pull request are welcome, but
 
 Site published at: https://kristle22.github.io/basic-package-project/
 
-Design: ![Basic](./img/basic-package.png))
+Design: ![Basic](./img/basic-package.png)
 
 ## Project features
 
