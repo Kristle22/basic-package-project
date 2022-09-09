@@ -25,7 +25,7 @@ body {
   /* margin-left: calc(50% - 500px); */
   background-color: #dae0e6;
   border-radius: 20px;
-  padding: 50px 20px;
+  padding: 100px 20px;
 }
 .floats,
 .f-floats {
@@ -99,8 +99,8 @@ a.bottom-link {
 .links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0 20px;
+  justify-content: space-between;
+  padding-left: 20px;
 }
 .soc-icons,
 .btm-text {
@@ -156,6 +156,7 @@ p > a:hover {
 
 @media screen and (max-width: 500px) {
   .main {
+    padding: 60px 0;
     width: 80%;
   }
   .floats {
@@ -167,5 +168,8 @@ p > a:hover {
   }
   a.bottom-link {
     padding: 8px 24px;
+  }
+  .footer {
+    width: 80%;
   }
 }
