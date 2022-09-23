@@ -35,6 +35,7 @@ body {
   padding: 40px 0;
   margin: 0 10px 10px 10px;
   text-align: center;
+  transition: all 0.2s ease-out;
 }
 a {
   text-decoration: none;
@@ -43,7 +44,7 @@ a {
   color: #fff;
   font-weight: bold;
   border-radius: 15px;
-  padding: 5px 20px;
+  padding: 8px 20px;
   line-height: 12px;
 }
 a.bottom-link {
@@ -52,6 +53,7 @@ a.bottom-link {
   border: 1px solid #4e87f0;
   padding: 8px 33px;
   font-size: 9px;
+  transition: all 0.2s ease-out;
 }
 .profit {
   font-size: 14px;
@@ -71,16 +73,23 @@ a.bottom-link {
 .blue {
   background-color: #4e87f0;
   color: #fff;
+  transform: scale(1.05);
 }
 
-.blue .top-link {
+a.top-link {
+  line-height: 5px;
+  transition: all 0.2s ease-out;
+}
+.blue .top-link,
+.floats:hover a.top-link {
   background-color: #fff;
   color: #4e87f0;
 }
 .blue p {
   color: #fff;
 }
-.blue .bottom-link {
+.blue .bottom-link,
+.floats:hover a.bottom-link {
   background-color: #4e87f0;
   border: 1px solid #fff;
   color: #fff;
@@ -134,8 +143,17 @@ a.bottom-link {
   padding-bottom: 5px;
   border-top: 1px solid #3277f7;
 }
-.floats .top-link:hover,
-.blue .bottom-link:hover {
+.floats:hover {
+  transform: scale(1.05);
+  background: linear-gradient(#0654c2f4, #487be8bc);
+  box-shadow: 4px 8px 16px #777;
+}
+.floats:hover p,
+.floats:hover h1 {
+  color: #fff;
+}
+.floats:hover .top-link,
+.floats > a.bottom-link:hover {
   border: 1px solid #4e87f0;
   background-color: #fff;
   color: #4e87f0;
@@ -150,8 +168,8 @@ p > a:hover {
   text-decoration: underline;
 }
 .soc-icons a:hover {
-  font-size: 20px;
-  padding: 8px;
+  font-size: 30px;
+  padding: 3px 4px;
 }
 
 @media screen and (max-width: 500px) {
