@@ -17,7 +17,10 @@ Design: ![Basic](./img/basic-package.png)
 
 -   Github pages (multi-page)
 -   CSS background-colors
--   CSS floats   
+-   CSS floats  
+-   Hover-effects
+-   Box-shadow
+-   Linear-gradients
 
 ## Authors
 
